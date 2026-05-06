@@ -19,10 +19,10 @@ const server = http.createServer((req, res) => {
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My App</title>
-  <style>
+  <title>Rainer's App</title>
+  <styl e>
     body { font-family: sans-serif; display: flex; justify-content: center;
-           align-items: center; height: 100vh; margin: 0; background: #fef3c7; }
+           align-items: center; height: 100vh; margin: 0; background: #fef3f7; }
     .card { background: white; padding: 2rem 3rem; border-radius: 12px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.1); text-align: center; }
     h1 { color: #2d3748; margin-bottom: 0.5rem; }

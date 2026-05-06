@@ -12,3 +12,4 @@ npm install -g pm2
 mkdir -p /home/ec2-user/cicd-app
 chown ec2-user:ec2-user /home/ec2-user/cicd-app
 echo "not-deployed-yet" > /home/ec2-user/cicd-app/version.txt
+chown ec2-user:ec2-user /home/ec2-user/cicd-app/version.txt
