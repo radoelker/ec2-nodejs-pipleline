@@ -18,6 +18,14 @@ jobs:
           TAG=${GITHUB_REF#refs/tags/}
           echo "Deploying version: $TAG"
           echo "$TAG" > app/version.txt
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Install dependencies
+        run: npm ci
+      - name: Install stylelint tools
+        run: npm install --save-dev stylelint stylelint-config-standard postcss-html
       - name: Check syntax
         run: node --check app/server.js
       - name: Check CSS syntax 
