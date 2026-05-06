@@ -20,8 +20,10 @@ jobs:
           echo "$TAG" > app/version.txt
       - name: Check syntax
         run: node --check app/server.js
+      - name: Check CSS syntax 
+        run: npx stylelint "app/*.html"
       - name: Validate HTML
-        run: npx html-validate app/server.js
+        run: npx html-validate "app/*.html"
       - name: Copy files to EC2
         uses: appleboy/scp-action@v0.1.7
         with:
