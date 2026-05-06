@@ -20,7 +20,7 @@ const server = http.createServer((req, res) => {
 <head>
   <meta charset="UTF-8">
   <title>Rainer's App</title>
-  <styl e>
+  <style>
     body { font-family: sans-serif; display: flex; justify-content: center;
            align-items: center; height: 100vh; margin: 0; background: #fef3f7; }
     .card { background: white; padding: 2rem 3rem; border-radius: 12px;
