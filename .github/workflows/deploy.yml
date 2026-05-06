@@ -22,8 +22,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 24
-      - name: Install dependencies
-        run: npm ci
       - name: Install stylelint tools
         run: npm install --save-dev stylelint stylelint-config-standard postcss-html
       - name: Check syntax
